@@ -122,3 +122,118 @@ body {
 .nav-icons-mobile .nav-link:hover {
     color: cyan;
 }
+
+/* Mobile logo fix */
+@media (max-width: 991px) {
+    .logo-container-mobile {
+        margin-right: auto;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+/* Media query for mobile view */
+@media (max-width: 991px) {
+    /* This will ensure the desktop icons are completely hidden on mobile */
+    .nav-icons {
+        display: none !important; /* Added !important to override any other styles */
+        visibility: hidden; /* Double protection to ensure it's hidden */
+        opacity: 0;
+    }
+
+    .nav-icons-mobile {
+        display: flex; /* Show mobile social icons */
+    }
+
+    .footer {
+        margin-bottom: 50px; /* Add space for the mobile social icons */
+    }
+}
+
+/* Ensure the desktop view is correct */
+@media (min-width: 992px) {
+    .nav-icons {
+        display: flex !important; /* Show desktop icons */
+    }
+
+    .nav-icons-mobile {
+        display: none !important; /* Hide mobile icons */
+    }
+
+    .footer {
+        margin-bottom: 0; /* Remove extra footer space */
+    }
+}
+
+/* Mobile logo fix */
+@media (max-width: 991px) {
+    .logo-container-mobile {
+        margin-right: auto;
+        margin-left: 0;
+        text-align: left;
+    }
+    
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+/* Media query for mobile view */
+@media (max-width: 991px) {
+    /* This will ensure the desktop icons are completely hidden on mobile */
+    .nav-icons {
+        display: none !important; /* Added !important to override any other styles */
+        visibility: hidden; /* Double protection to ensure it's hidden */
+        opacity: 0;
+    }
+    
+    .nav-icons-mobile {
+        display: flex; /* Show mobile social icons */
+    }
+    
+    .footer {
+        margin-bottom: 50px; /* Add space for the mobile social icons */
+    }
+}
+
+/* Media query for mobile view */
+@media (max-width: 991px) {
+    /* This will ensure the desktop icons are completely hidden on mobile */
+    .nav-icons {
+        display: none !important; /* Added !important to override any other styles */
+        visibility: hidden; /* Double protection to ensure it's hidden */
+        opacity: 0;
+    }
+    
+    .nav-icons-mobile {
+        display: flex; /* Show mobile social icons */
+    }
+    
+    .footer {
+        margin-bottom: 50px; /* Add space for the mobile social icons */
+    }
+    
+    /* Enhance navbar drop shadow for mobile */
+    .navbar {
+        box-shadow: 0 3px 12px rgba(0, 242, 255, 0.5);
+    }
+}
+
+/* Ensure the desktop view is correct */
+@media (min-width: 992px) {
+    .nav-icons {
+        display: flex !important; /* Show desktop icons */
+    }
+    
+    .nav-icons-mobile {
+        display: none !important; /* Hide mobile icons */
+    }
+    
+    .footer {
+        margin-bottom: 0; /* Remove extra footer space */
+    }
+}
